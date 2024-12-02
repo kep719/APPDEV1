@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Activity Guide 1</title>
+    </head>
+
+    <body>
+
+        <form onsubmit="return processForm()">
+            <label for="name">enter your name</label>
+            <input type="text" name="name" id="name" required>
+            <button type="submit">submit</button>
+        </form>
+
+    </body>
+
+    <script>
+        // processForm = () => {} //same as the next line
+        function processForm(){
+
+            let userName = document.getElementById("name").value
+            alert("hello "+userName+"!")
+            return false
+
+        }
+
+    </script>
+</html>
